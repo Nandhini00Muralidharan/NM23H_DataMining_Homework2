@@ -189,11 +189,11 @@ def question5():
     # Read appropriate section of book chapter 3
 
     # string: one of 'Model 1' or 'Model 2'
-    explain["a"] = ""
-    explain["a explain"] = ""
+    explain["a"] = "Model 2"
+    explain["a explain"] = "Model 2 has higher test accuracy than Model 1 (even if the training accuracy of Model 1 is higher). It is Model 2 which shows less less difference between training and testing accuracy. This type of model is preferred for making predictions on unseen data."
 
     # string: one of 'Model 1' or 'Model 2'
-    explain["b"] = ""
+    explain["b"] = "Model 2"
     explain["b explain"] = ""
 
     explain["c similarity"] = ""
