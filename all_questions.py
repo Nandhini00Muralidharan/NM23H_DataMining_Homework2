@@ -273,8 +273,8 @@ def question7():
     answer["b, info gain, Handedness"] = 0.531
 
     # string: "ID" or "Handedness"
-    answer["c, which attrib"] = "ID"
-    #answer["c, which attrib"] = "Handedness" #Despite the lower information gain compared to the ID attribute it is chosen because it is more likely to result the model that generalises well to the new data. (ID would overfit the training data)
+    answer["c, which attrib"] = "ID" #According to Information Gain only - as asked in the question
+    #It should be "Handedness" despite the lower information gain compared to the ID attribute it is chosen because it is more likely to result the model that generalises well to the new data. (ID would overfit the training data).
 
     # answer is a float
     answer["d, gain ratio, ID"] = 0.2313
