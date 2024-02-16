@@ -100,20 +100,20 @@ def question2():
     # Use the Binary Tree structure to construct the tree
     # Answer is an instance of BinaryTree
     
-    #ASSUME LEF MEANS "TRUE" AND RIGHT MEANS "FALSE"
-    tree = u.BinaryTree("y<=0.6")
+    #Assume left is "true" and right is "false"
+    tree = u.BinaryTree("y=0.6")
     
-    A = tree.insert_left("x<=0.7")
+    A = tree.insert_left("x=0.7")
     A.insert_left("B")
     
-    B = A.insert_right("y<=0.3")
+    B = A.insert_right("y=0.3")
     B.insert_left("A")
     B.insert_right("C")
     
-    C = tree.insert_right("x<=0.2")
+    C = tree.insert_right("x=0.2")
     C.insert_right("A")
     
-    D = C.insert_left("y<=0.8")
+    D = C.insert_left("y=0.8")
     D.insert_left("C")
     D.insert_right("B")
     
@@ -135,7 +135,7 @@ def question3():
     answer["(b) Gini, ID"] = 0.0
     answer["(c) Gini, Gender"] = 0.48
     answer["(d) Gini, Car type"] = 0.1625
-    answer["(e) Gini, Shirt type"] = 0.495
+    answer["(e) Gini, Shirt type"] = 0.491
 
     answer["(f) attr for splitting"] = "Car type"
 
@@ -171,28 +171,23 @@ def question4():
     answer["c"] = ["Discrete", "Quantitative", "Ordinal"]
     answer["c: explain"] = "People's assessments of brightness are qualitative since they could not be exactly quantifiable. It can also be viewed as ordinal, though, as judgments could be rated in order of brightness."
 
-    #DIFFERENT
     answer["d"] = ["Continuous", "Quantitative", "Ratio"]
     answer["d: explain"] = "Angles measured in degrees between 0 and 360 represent a continuous scale with a true zero point and equal intervals between measurements, making it a ratio quantitative attribute."
 
-    #DIFFERENT
     answer["e"] = ["Binary", "Qualitative", "Ordinal"]
     answer["e: explain"] = "Medals awarded at the Olympics have a natural ordering (Bronze < Silver < Gold), making it an ordinal qualitative attribute. However, it is also binary since each medal can be considered as either won or not won."
 
-    #DIFFERENT
     answer["f"] = ["Continuous", "Quantitative", "Interval"]
-    answer["f: explain"] = "Height above sea level can theoretically take on any real value within a range, but it lacks a true zero point (sea level is an arbitrary reference point) and the intervals between measurements are uniform but arbitrary, making it an interval quantitative attribute."
+    answer["f: explain"] = "Height above sea level can theoretically take on any real value within a range, but it lacks a true zero point and the intervals between measurements are uniform but arbitrary, making it an interval quantitative attribute."
 
     answer["g"] = ["Discrete", "Quantitative", "Ratio"]
     answer["g: explain"] = "The number of patients is countable with a true zero, making it ratio data."
 
-    #DIFFERENT
     answer["h"] = ["Binary", "Qualitative", "Nominal"]
     answer["h: explain"] = "ISBN numbers for books typically consist of a string of digits, letters, and hyphens serving only as unique identifiers without any inherent order or numerical value, making it a nominal qualitative attribute. Moreover, each book either has a valid ISBN number or not, hence it can also be considered binary."
 
-    #DIFFERENT
     answer["i"] = ["Binary", "Qualitative", "Ordinal"]
-    answer["i: explain"] = "The ability to pass light can be categorized into three distinct levels: opaque, translucent, and transparent, with a natural ordering (opaque < translucent < transparent), making it an ordinal qualitative attribute. However, it can also be considered binary since each material can be classified as either allowing light to pass through or not."
+    answer["i: explain"] = "The ability to pass light can be categorized into three distinct levels: opaque, translucent, and transparent, with a natural ordering, making it an ordinal qualitative attribute. However, it can also be considered binary since each material can be classified as either allowing light to pass through or not."
 
     answer["j"] = ["Discrete", "Qualitative", "Ordinal"]
     answer["j: explain"] = "Military rank consists of a finite set of distinct levels with a clear ordering, making it a discrete ordinal qualitative attribute."
@@ -259,8 +254,8 @@ def question6():
     tree = u.BinaryTree("x <= 0.5")
 
     A = tree.insert_right("A")
-    B = tree.insert_left("y <= 0.4")
     
+    B = tree.insert_left("y <= 0.4")
     B.insert_left("A")
     B.insert_right("x <= 0.2")
     
